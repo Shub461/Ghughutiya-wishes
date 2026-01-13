@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Ghughutiya Gayatri</title>
+<title>Happy Ghughutiya Dear</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
@@ -104,6 +104,13 @@ animation:fall 5s linear infinite;
 0%{top:-10px}
 100%{top:100vh}
 }
+  .gallery-img{
+  width:100%;
+  margin-top:12px;
+  border-radius:12px;
+  object-fit:cover;
+}
+
 </style>
 </head>
 <body>
@@ -111,8 +118,8 @@ animation:fall 5s linear infinite;
 <!-- Password Screen -->
 <script>
 let pass=prompt("Enter surprise password 👀","");
-if(pass!=="gayatri"){
-document.body.innerHTML="<h2 style='text-align:center;margin-top:40vh'>Access Denied</h2>";
+if(pass!=="Me"){
+document.body.innerHTML="<h2 style='text-align:center;margin-top:40vh'>WELCOME</h2>";
 }
 </script>
 
@@ -120,7 +127,7 @@ document.body.innerHTML="<h2 style='text-align:center;margin-top:40vh'>Access De
 <div class="kite"></div>
 <div class="kite" style="animation-delay:4s;background:#2196f3"></div>
 <h1>🪁 Happy Ghughutiya 🪁</h1>
-<h2>Dear Gayatri 🌸</h2>
+<h2> Aapko Aur family Ko 🌸</h2>
 <p>Kumaon ki parampara, pyaar aur muskaan ke saath</p>
 </header>
 
@@ -132,14 +139,14 @@ document.body.innerHTML="<h2 style='text-align:center;margin-top:40vh'>Access De
 </nav>
 
 <section id="about">
-<h2>For You, Gayatri 💛</h2>
+<h2>For You, MY LOVE 💛</h2>
 <p>
 Jaise Ghughuti ki mala mithaas se bhari hoti hai, waise hi tumhari zindagi khushiyon se bhari rahe. Tumhari har muskaan Kumaon ki subah jaise roshan ho 🌄
 </p>
 </section>
 
 <section id="festival">
-<h2>Ghughutiya (Kale Kauwa)</h2>
+<h2>Ghughutiya (Kale Kauwa) just for knowledge</h2>
 <div class="cards">
 <div class="card">🐦 Kale Kauwa – bachpan ki yaadein aur parampara</div>
 <div class="card">🍪 Ghughuti – mithaas aur pyaar ka prateek</div>
@@ -149,13 +156,26 @@ Jaise Ghughuti ki mala mithaas se bhari hoti hai, waise hi tumhari zindagi khush
 </section>
 
 <section id="gallery">
-<h2>Memories for Gayatri 📸</h2>
-<div class="cards">
-<div class="card">🌸 Smile</div>
-<div class="card">🌼 Happiness</div>
-<div class="card">🌺 Warmth</div>
-</div>
+  <h2>Memories for Gayatri 📸</h2>
+
+  <div class="cards">
+    <!-- Text card -->
+    <div class="card">🌸 Smile</div>
+
+    <!-- Happiness with image -->
+    <div class="card">
+      🌼 Happiness
+      <img src="images/happiness.jpg" alt="Happiness" class="gallery-img">
+    </div>
+
+    <!-- Warmth with image -->
+    <div class="card">
+      🌺 Warmth
+      <img src="images/warmth.jpg" alt="Warmth" class="gallery-img">
+    </div>
+  </div>
 </section>
+
 
 <section id="wishes">
 <h2>Special Wishes 💌</h2>
@@ -164,21 +184,13 @@ Jaise Ghughuti ki mala mithaas se bhari hoti hai, waise hi tumhari zindagi khush
 <button onclick="wish('en')">English</button>
 <button onclick="wish('hi')">Hindi</button>
 <button onclick="wish('km')">Kumaoni</button>
-<button onclick="crow()">🐦 Kale Kauwa</button>
 </div>
 </section>
 
 <footer>
-<p>Made with ❤️ only for Gayatri | Happy Ghughutiya</p>
+<p>Made with ❤️ only for You | Happy Ghughutiya</p>
 </footer>
 
-<!-- Music -->
-<audio autoplay loop controls style="width:100%">
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-</audio>
-
-<!-- Sounds -->
-<audio id="crowSound" src="https://www.fesliyanstudios.com/play-mp3/4387"></audio>
 
 <script>
 const wishes={
@@ -189,8 +201,6 @@ km:["Ghughutiya tyohar ki dher sari badhai chho 🌄"]
 function wish(lang){
 document.getElementById('wishText').innerText=wishes[lang][0];
 }
-function crow(){document.getElementById('crowSound').play();}
-
 // Confetti
 for(let i=0;i<40;i++){
 let c=document.createElement('div');
@@ -204,3 +214,4 @@ document.body.appendChild(c);
 
 </body>
 </html>
+
